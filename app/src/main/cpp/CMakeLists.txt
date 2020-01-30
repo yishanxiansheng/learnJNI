@@ -34,7 +34,8 @@ find_library(
         log-lib
         log)
 
-# 将android的log-lib库与生成的native-lib库进行链接
+# 将android的log-lib库 、peopel-lib与生成的native-lib库进行链接
 target_link_libraries(
         native-lib
+        people-lib
         ${log-lib})
